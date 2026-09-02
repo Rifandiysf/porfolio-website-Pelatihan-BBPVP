@@ -1,13 +1,33 @@
 @import "tailwindcss";
 
 @theme {
-    --color-primary: oklch(0.4627 0.305952 268.9919);
-    --color-secondary: oklch(0.968 0.007 247.896);
-    --color-dark: oklch(38.6% 0.063 100.416);
+  --color-primary: oklch(0.4627 0.305952 268.9919);
+  --color-secondary: oklch(0.968 0.007 247.896);
+  --color-dark: oklch(38.6% 0.063 100.416);
 }
 
 @layer utilities {
-    body {
-        font-family: "big shoulders", sans-serif;
-    }
+  body {
+    font-family: "big shoulders", sans-serif;
+  }
+
+  .hamburger-line {
+    @apply w-7.5 h-0.5 my-2 block bg-dark;
+  }
+
+  .hamburger-active > span:nth-child(1) {
+    @apply rotate-45;
+  }
+
+  .hamburger-active > span:nth-child(2) {
+    @apply scale-0;
+  }
+
+  .hamburger-active > span:nth-child(3) {
+    @apply -rotate-45;
+  }
+
+  .navbar-fixed {
+    @apply fixed z-9999 bg-white/40 backdrop-blur-lg shadow-md
+  }
 }
