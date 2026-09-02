@@ -7,6 +7,10 @@
 }
 
 @layer utilities {
+    * {
+        scroll-behavior: smooth;
+    }
+
   body {
     font-family: "big shoulders", sans-serif;
   }
