@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: oklch(0.4627 0.305952 268.9919);
+    --color-secondary: oklch(0.968 0.007 247.896);
+    --color-dark: oklch(38.6% 0.063 100.416);
+}
+
+@layer utilities {
+    body {
+        font-family: "big shoulders", sans-serif;
+    }
+}
